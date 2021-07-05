@@ -13,8 +13,19 @@ public class PersonVo {
 		
 	}
 	
-	public PersonVo(int personId, String name, String hp, String company) {
+	public PersonVo(int personId) {
+		this.presonId = personId;
 		
+	}
+	
+	public PersonVo(String name,String hp, String company) {
+		this.name = name;
+		this.hp = hp;
+		this.company = company;
+		
+	}
+	
+	public PersonVo(int personId, String name, String hp, String company) {
 		this.presonId = personId;
 		this.name = name;
 		this.hp = hp;

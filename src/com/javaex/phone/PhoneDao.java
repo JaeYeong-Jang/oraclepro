@@ -182,6 +182,7 @@ public class PhoneDao {
 			query += "       hp, ";
 			query += "       company ";
 			query += "from phonebook ";
+			query += "order by person_id asc ";
 
 			pstmt = conn.prepareStatement(query);
 
@@ -211,4 +212,7 @@ public class PhoneDao {
 		return personList;
 
 	}
+	
+	
+	
 }
